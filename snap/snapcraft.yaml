@@ -18,3 +18,4 @@ parts:
     source: https://github.com/alacritty/alacritty/archive/v0.5.0-rc4.tar.gz
     plugin: rust
     build-packages: [libfreetype6-dev,libfontconfig1-dev,libxcb-xfixes0-dev,python3]
+    stage-packages: [libfreetype6,libfontconfig1,libxcb-xfixes0]
