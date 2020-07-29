@@ -1,0 +1,20 @@
+name: alacritty-onjin
+base: core18
+version: '0.5.0-rc4'
+summary: Alacritty is the fastest terminal emulator in existence
+description: |
+  Alacritty is the fastest terminal emulator in existence. Using the GPU for rendering enables optimizations that simply aren't possible without it. Alacritty currently supports macOS, Linux, BSD, and Windows.
+
+grade: devel
+confinement: devmode
+
+apps:
+  alacritty:
+    command: bin/alacritty
+
+
+parts:
+  alacritty:
+    source: https://github.com/alacritty/alacritty/archive/v0.5.0-rc4.tar.gz
+    plugin: rust
+    build-packages: [libfreetype6-dev,libfontconfig1-dev,libxcb-xfixes0-dev,python3]
