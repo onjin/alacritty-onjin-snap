@@ -5,8 +5,8 @@ summary: Alacritty is the fastest terminal emulator in existence
 description: |
   Alacritty is the fastest terminal emulator in existence. Using the GPU for rendering enables optimizations that simply aren't possible without it. Alacritty currently supports macOS, Linux, BSD, and Windows.
 
-grade: devel
-confinement: devmode
+grade: stable
+confinement: strict
 
 apps:
   alacritty:
